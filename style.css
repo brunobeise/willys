@@ -1,0 +1,167 @@
+@font-face {
+    font-family: "Corner Fat";
+    src: url("./assets/CornerC-Fat.woff") 
+}
+
+@font-face {
+    font-family: "Corner Regular";
+    src: url("./assets/CornerC-Regular.woff") 
+}
+
+* {
+    font-family: 'Corner Regular';
+    color: white;
+    text-shadow: 5px 5px 10px black;
+}
+h1 {
+    font-family: 'Corner Fat';
+    color: rgb(255, 202, 44);
+    font-size: 20vw;
+}
+
+h5 {
+    font-family: 'Corner Fat';
+    color: rgb(255, 202, 44);
+    letter-spacing:2px;
+    font-size: 50px;
+}
+body {
+    background-color: rgb(23, 23, 23);
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+header {
+    background-color: rgb(23, 23, 23);
+    position: absolute;
+    top: 0;
+    opacity: 1;
+    z-index: 12;
+}
+
+header > nav {
+    background-color: rgb(23, 23, 23);
+    height: 100px;
+}
+
+.hover:hover {
+    color: rgb(255, 202, 44);
+}
+
+#hamburger {
+    background-color: black;
+}
+
+#info {
+    background-color: rgb(23, 23, 23);
+    height: 300px;
+}
+
+
+#textoanimado {
+    font-size: 7vw;
+    position: absolute;
+    text-align: center;
+    z-index: 11;
+    top: calc(90px + 5vw);
+    animation-duration: 3s;
+    animation: texto 1.5s ease;
+}
+
+.carousel-item {
+    background-color: rgb(23, 23, 23);
+    background-image: url("./assets/fundo.png");
+    height: 500px;
+}
+
+.card-body {
+    background-color: rgba(14, 14, 14, 0.932);
+    border: none;
+}
+
+.card-text {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+.card {
+    border: none;
+    background-color: rgba(14, 14, 14, 0.932);;
+}
+
+.cardmobile {
+    max-height: 600px;
+}
+
+.card-title{
+    font-family: 'Corner Fat';
+    color: rgb(255, 202, 44);
+    letter-spacing:2px;
+    text-shadow: none;
+    font-size: 48px;
+
+}
+
+
+#melhorxis > h1 { 
+    text-align: center;
+    font-size: 10vw!important;
+}
+
+#carrosseltabuas > .carousel-inner > .carousel-item {
+    background-image: none;
+    height: auto;
+}
+
+.responsive-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  #containermapa {
+        position: relative;
+        overflow: hidden;
+        padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+        margin-bottom: 30px;
+      
+  }
+
+  a > i {
+    font-size: 30px;
+  }
+
+  a > i:hover {
+    color: rgb(255, 202, 44);
+  }
+
+
+
+
+
+
+
+@media (max-width: 992px)
+{
+  .carousel-item
+   {
+    height: 800px;
+   }
+
+   .card {
+    height: 700px;
+   }
+}
+
+@keyframes texto {
+    0% {
+        top: -30vw;
+    }
+    100% {
+       top:calc(90px + 5vw);
+    }
+}
