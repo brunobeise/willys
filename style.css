@@ -98,8 +98,8 @@ header > nav {
     color: rgb(255, 202, 44);
     letter-spacing:2px;
     text-shadow: none;
-    font-size: 48px;
-
+    font-size: clamp(20px, 20px + 8vw, 48px);
+    word-break: break-word;
 }
 
 
