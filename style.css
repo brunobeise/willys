@@ -50,6 +50,7 @@ header > nav {
 
 #hamburger {
     background-color: black;
+    min-height: 400px;
 }
 
 #info {
